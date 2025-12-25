@@ -1,58 +1,77 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mein Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Seufert</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Start</a></li>
-                <li><a href="#about">Über mich</a></li>
-                <li><a href="#projects">Projekte</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <h1>Willkommen auf meiner Portfolio-Seite</h1>
-        <p>Hier findest du Infos über mich und meine Arbeit.</p>
+<header class="container">
+    <nav>
+        <span class="logo">TS</span>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h1>Hey I'm Filip.</h1>
+        <p class="subtitle">Student & Developer focused on clean ideas and simple design.</p>
     </section>
 
-    <section id="about">
-        <h2>Über mich</h2>
-        <p>Ich bin ein angehender Entwickler und liebe es, Websites zu bauen 🚀.</p>
+    <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+            I’m a high school student who enjoys building digital things.
+            I like working on small, thoughtful projects where design and code
+            come together in a clean and simple way.
+        </p>
     </section>
 
-    <section id="projects">
-        <h2>Projekte</h2>
-        <div class="project">
-            <h3>Projekt 1: Meine erste Website</h3>
-            <p>Eine einfache HTML/CSS-Seite.</p>
+    <section id="work" class="section">
+        <h2>Selected Work</h2>
+
+        <div class="work-item">
+            <h3>Freeplayapp- Windows</h3>
+            <p>A creative playground app focused on freedom and simplicity.</p>
         </div>
-        <div class="project">
-            <h3>Projekt 2: To-Do-App</h3>
-            <p>Eine kleine App mit JavaScript.</p>
+
+        <div class="work-item">
+            <h3>---</h3>
+            <p>---</p>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Dein Name" required>
-            <input type="email" placeholder="Deine E-Mail" required>
-            <textarea placeholder="Deine Nachricht" required></textarea>
-            <button type="submit">Absenden</button>
-        </form>
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>
+            If you want to talk or collaborate,<br>
+            feel free to reach out.
+        </p>
+
+        <a class="mail" href="mailto:fipvip.roessner@gmail.com">
+            fipvip.roessner@gmail.com
+        </a>
+
+        <div class="links">
+            <a href="#">GitHub</a>
+            <a href="#">Medium</a>
+            <a href="#">Behance</a>
+        </div>
     </section>
+</main>
 
-    <footer>
-        <p>© 2025 Mein Portfolio</p>
-    </footer>
+<footer>
+    <p>© 2025 Filip Roessner</p>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
+
